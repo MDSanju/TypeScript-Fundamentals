@@ -4,3 +4,4 @@ let herName:string = 'Nura';
 let isTrue:boolean = true;
 // const variable
 const herAge: number = 21;
+const deviceName: string = "Laptop";

@@ -5,3 +5,4 @@ let herName = 'Nura';
 let isTrue = true;
 // const variable
 const herAge = 21;
+const deviceName = "Laptop";

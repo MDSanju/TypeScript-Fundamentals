@@ -46,3 +46,36 @@ const zuckerberg: Developer = {
     codeEditor: 'VS Code',
     typingSpeed: 40,
 }
+
+interface LaptopConfig {
+  brand: string;
+  model: string;
+  price: number;
+  screenSize?: number;
+}
+
+const device = (configurations: LaptopConfig) => {
+  const deviceBrand = configurations.brand;
+  const deviceModel = configurations.model;
+  const devicePrice = configurations.price;
+  const deviceScreenSize = configurations.screenSize;
+
+  console.log(
+    `Brand: ${deviceBrand}, Model: ${deviceModel}, Price: ${devicePrice} Screen Size: ${
+      deviceScreenSize ? deviceScreenSize : null
+    }`
+  );
+};
+
+device({
+  brand: "Apple",
+  model: "MacBook Pro",
+  price: 300000,
+});
+
+device({
+  brand: "HP",
+  model: "EliteBook",
+  price: 100000,
+  screenSize: 14,
+});
